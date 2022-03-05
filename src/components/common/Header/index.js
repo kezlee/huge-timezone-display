@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
-import { HeaderContainer } from './styles';
+import { HeaderContainer, Logo } from './styles';
 
 const Header = () => {
     return (
         <HeaderContainer>
-            test
+            <Logo>
+                <img className='logo' src="/images/logo.png" alt='' />
+            </Logo>
+            <button className='button'>
+                Map View
+            </button>
         </HeaderContainer>
     );
 };
