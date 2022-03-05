@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&family=Open+Sans:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;900&family=Open+Sans:wght@400;600;700;800&display=swap');
 
 * {
   box-sizing: border-box;
@@ -28,11 +28,12 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #1A1A1A;
   overflow: auto;
   color: #FFFFFF;
   width: 100%;
+  min-height: 100vh;
 }
