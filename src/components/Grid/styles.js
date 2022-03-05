@@ -10,8 +10,7 @@ export const GridSection = styled.section`
 
 export const GridItem = styled.div`
     padding: 3vw 2vw;
-    border-right: 1px solid #FFFFFF21;
-    border-top: 1px solid #FFFFFF21;
+    border-bottom: 1px solid #FFFFFF21;
     height: calc(33.3vh - 20px);
     display: flex;
     flex-direction: column;

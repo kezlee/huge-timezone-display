@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Header from './components/common/Header';
 import Grid from './components/Grid';
+import GridLine from './components/GridLine';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <Header />
+    <GridLine />
     <Grid />
   </React.StrictMode>,
   document.getElementById('root')
