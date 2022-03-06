@@ -6,6 +6,8 @@ export const GridSection = styled.section`
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    position: relative;
+    z-index: 1;
 `;
 
 export const GridItem = styled.div`

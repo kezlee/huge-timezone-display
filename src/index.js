@@ -9,8 +9,8 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <Header />
-    <GridLine />
     <Grid />
+    <GridLine />
   </React.StrictMode>,
   document.getElementById('root')
 );
