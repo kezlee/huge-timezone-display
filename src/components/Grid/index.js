@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { GridSection, GridItem, OfficeCountry, Separator, TimeZone } from './styles';
 
 const Grid = () => {
-    const content = [
+    const CONTENT = [
         {
             id: 0,
             country: 'Atlanta.',
@@ -70,31 +70,35 @@ const Grid = () => {
         }
     ];
 
+    const [content, setContent] = useState(CONTENT);
+
     const getTimeZone = (timeZone) => {
         let now = new Date(Date.now());
-        let month= now.toLocaleDateString('en-US',{timeZone,month:'long'}).substring(0,3);
-        let localDateString =  now.toLocaleDateString('en-US',{timeZone});
-
-        let date = new Date(localDateString).getDate();
-        let year = new Date(localDateString).getFullYear();
-        let customTimeString = date+ ' ' + month + ','+ year;
-
         let time = now.toLocaleTimeString('en-US',{timeZone,hour12:false}).substring(0,5);
-        return time;
 
-    }
+        return time;
+    };
+
+    const updateTimeZone = (timeZone) => {
+        setInterval(() => {
+            return getTimeZone(timeZone);
+        }, 30 * 1000);
+    };
+
     return (
         <GridSection>
             {
+                
                 content.map((item) => {
                     return (
                         <GridItem key={item.id}>
                             <OfficeCountry>{item.country}</OfficeCountry>
                             <Separator></Separator>
-                            <TimeZone>{getTimeZone(item.timezone)}</TimeZone>
+                            <TimeZone>{ getTimeZone(item.timezone) }</TimeZone>
                         </GridItem>
                     );
                 })
+                
             }
         </GridSection>
     );

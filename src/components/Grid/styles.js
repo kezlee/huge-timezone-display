@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { breakpoints } from '../../theme/index';
 
 export const GridSection = styled.section`
     display: grid;
@@ -32,6 +33,10 @@ export const Separator = styled.div`
     width: 75px;
     margin: 15px 0 30px;
     border-bottom: 4px solid #E4368C;
+
+    @media ${breakpoints.xsmd} {
+        margin: 4px 0 8px;
+    }
 `;
 
 export const TimeZone = styled.div`

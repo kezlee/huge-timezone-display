@@ -5,9 +5,11 @@ import Header from './components/common/Header';
 import Grid from './components/Grid';
 import GridLine from './components/GridLine';
 import reportWebVitals from './reportWebVitals';
+import GlobalStyle from './theme/GlobalStyle';
 
 ReactDOM.render(
   <React.StrictMode>
+    <GlobalStyle />
     <Header />
     <Grid />
     <GridLine />
