@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { breakpoints } from '../../theme/index';
 
 export const GridLineContainer = styled.section`
     position: fixed;
@@ -9,6 +10,14 @@ export const GridLineContainer = styled.section`
     grid-row-gap: 0px;
     height: 100vh;
     width: 100%;
+
+    @media ${breakpoints.md} {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media ${breakpoints.xs} {
+        grid-template-columns: repeat(3, 1fr);
+    }
 `;
 
 export const GridItem = styled.div`
