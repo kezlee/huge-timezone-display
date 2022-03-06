@@ -7,6 +7,9 @@ export const HeaderContainer = styled.header`
     border-bottom: 1px solid #FFFFFF21;
     align-items: center;
     padding-right: 40px;
+    position: relative;
+    z-index: 2;
+    background: #1A1A1A;
 
     .button {
         color: #E4368C;
