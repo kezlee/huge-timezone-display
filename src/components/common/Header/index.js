@@ -7,9 +7,9 @@ const Header = () => {
             <Logo>
                 <img className='logo' src="/images/logo.png" alt='' />
             </Logo>
-            <button className='button'>
+            {/* <button className='button'>
                 Map View
-            </button>
+            </button> */}
         </HeaderContainer>
     );
 };
