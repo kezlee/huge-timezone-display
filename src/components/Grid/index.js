@@ -80,10 +80,7 @@ const Grid = () => {
 
     const getTimeZone = (timeZone) => {
         let now = new Date(Date.now());
-        let time = now.toLocaleTimeString('en-US',{timeZone,hour12:false}).substring(0,5);
-
-        console.log(now.toLocaleTimeString('en-US',{timeZone, hour12: false, hour: '2-digit',
-        minute:'2-digit'}));
+        let time = now.toLocaleTimeString('en-US',{ timeZone, hourCycle: 'h23' }).substring(0,5);
         return time;
     };
 
