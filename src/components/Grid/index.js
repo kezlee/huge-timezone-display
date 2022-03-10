@@ -66,6 +66,11 @@ const CONTENT = [
         id: 12,
         country: 'Tokyo.',
         timezone: 'Asia/Tokyo',
+    },
+    {
+        id: 13,
+        country: 'Vietnam.',
+        timezone: 'Asia/Ho_Chi_Minh',
     }
 ];
 
@@ -76,6 +81,9 @@ const Grid = () => {
     const getTimeZone = (timeZone) => {
         let now = new Date(Date.now());
         let time = now.toLocaleTimeString('en-US',{timeZone,hour12:false}).substring(0,5);
+
+        console.log(now.toLocaleTimeString('en-US',{timeZone, hour12: false, hour: '2-digit',
+        minute:'2-digit'}));
         return time;
     };
 
